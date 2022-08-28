@@ -376,6 +376,9 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 "Assets/Scripts/HandsBehavior.cs"
+"Assets/Scripts/Objects/Cut.cs"
+"Assets/Scripts/Objects/Plate.cs"
+"Assets/Scripts/Sistemas/NotesGenerator.cs"
 -langversion:9.0
 
 /deterministic

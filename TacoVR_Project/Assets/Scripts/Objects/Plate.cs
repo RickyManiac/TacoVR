@@ -23,15 +23,17 @@ public class Plate : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (EmptyPlate! && other.tag == ("Tortilla"))
+        Debug.Log("Toritillllaaaaaaaaaaaa!!!!!!!!1");
+        if (!EmptyPlate && other.tag == ("Tortilla"))
         {
+
             other.transform.parent = TortillaEmpty.transform;
             EmptyPlate = true;
             TortillaInPlate = true;
-            other.transform.position = Vector3.zero;
+            other.transform.localPosition = Vector3.zero;
 
         }
-        else if (TortillaInPlate && other.tag == ("Meet"))
+        else if (TortillaInPlate && other.tag == ("Meat"))
         {
             other.transform.parent = MeetEmpty.transform;
             MeetInPlate = true;

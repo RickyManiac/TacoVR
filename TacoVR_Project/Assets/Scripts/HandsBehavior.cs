@@ -55,4 +55,14 @@ public class HandsBehavior : MonoBehaviour
 
         }
     }
+
+    void OnTriggerExit(Collider other)
+    {
+        if(other.tag == "Pickable")
+        {
+            other.transform.parent = null;
+            other.transform.GetComponent<Rigidbody>().useGravity = true;
+
+        }
+    }
 }
