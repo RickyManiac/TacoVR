@@ -44,10 +44,12 @@ public class HandsBehavior : MonoBehaviour
             if(r_hand_press)
             {
                 other.transform.parent = r_Hand;
+                other.transform.GetComponent<Rigidbody>().useGravity = false;
 
             }else if(!r_hand_pressed)
             {
                 other.transform.parent = null;
+                other.transform.GetComponent<Rigidbody>().useGravity = true;
             }
 
 
